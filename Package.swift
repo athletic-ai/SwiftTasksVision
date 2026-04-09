@@ -3,13 +3,13 @@ import PackageDescription
 import Foundation
 
 let package = Package(
-    name: "SwiftTasksVision",
+    name: "SwiftTasksVision", type: .static,
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "SwiftTasksVision",
+            name: "SwiftTasksVision", type: .static,
             targets: ["SwiftTasksVision"]
         ),
         .executable(
@@ -19,7 +19,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SwiftTasksVision",
+            name: "SwiftTasksVision", type: .static,
             dependencies: ["SwiftTasksVisionCore"]
         ),
         .target(
